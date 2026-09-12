@@ -185,7 +185,6 @@
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative lg:col-span-3">
                         <div class="p-6 flex flex-col lg:flex-row gap-6 items-center">
                             <div class="w-full lg:w-1/3 h-48 lg:h-full rounded-xl overflow-hidden relative">
-                                <!-- THESIS IMAGE PLACEHOLDER -->
                                 <img src="https://placehold.co/800x600/0f172a/10b981?text=Air+Quality+Modeling" alt="Thesis Project" class="w-full h-full object-cover">
                             </div>
                             <div class="w-full lg:w-2/3 flex flex-col">
@@ -204,9 +203,7 @@
                     <!-- Project Card 1: Driving -->
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative">
                         <div class="h-48 overflow-hidden relative border-b border-slate-700">
-                            <!-- PROJECT 1 IMAGE PLACEHOLDER -->
                             <img src="https://placehold.co/600x400/0f172a/64748b?text=Driving+Data+Visualization" alt="Distracted Driving Project" class="w-full h-full object-cover">
-                            
                              <div class="project-overlay absolute inset-0 bg-dark/90 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
                                 <p class="text-sm text-slate-300">Applied K-fold cross-validation and hyperparameter tuning to optimize model accuracy.</p>
                             </div>
@@ -225,9 +222,7 @@
                     <!-- Project Card 2: Earthquake -->
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative" style="transition-delay: 100ms;">
                         <div class="h-48 overflow-hidden relative border-b border-slate-700">
-                            <!-- PROJECT 2 IMAGE PLACEHOLDER -->
                             <img src="https://placehold.co/600x400/0f172a/64748b?text=Seismic+Data+Model" alt="Earthquake Prediction Project" class="w-full h-full object-cover">
-                            
                             <div class="project-overlay absolute inset-0 bg-dark/90 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
                                 <p class="text-sm text-slate-300">Evaluated multiple algorithms using cross-validation to determine the most robust predictive model.</p>
                             </div>
@@ -245,9 +240,7 @@
                     <!-- Project Card 3: Diabetes -->
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative" style="transition-delay: 200ms;">
                         <div class="h-48 overflow-hidden relative border-b border-slate-700">
-                            <!-- PROJECT 3 IMAGE PLACEHOLDER -->
                             <img src="https://placehold.co/600x400/0f172a/64748b?text=Health+Data+Analysis" alt="Diabetes Prediction Project" class="w-full h-full object-cover">
-                            
                              <div class="project-overlay absolute inset-0 bg-dark/90 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
                                 <p class="text-sm text-slate-300">Performed extensive data preprocessing and feature selection before evaluating with standard metrics.</p>
                             </div>
@@ -263,22 +256,35 @@
                         </div>
                     </div>
                     
-                    <!-- Project Card 4: Spam -->
+                    <!-- Project Card 4: Spam Detection (UPDATED) -->
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative" style="transition-delay: 300ms;">
-                        <div class="h-48 overflow-hidden relative border-b border-slate-700">
-                            <!-- PROJECT 4 IMAGE PLACEHOLDER -->
-                            <img src="images/spam_class.png" alt="Spam Detection Project" class="w-full h-full object-cover">
+                        <!-- Make the image area a clickable link to the live app -->
+                        <a href="https://brig-spam-classifier.streamlit.app/" target="_blank" rel="noopener noreferrer" class="block h-48 overflow-hidden relative border-b border-slate-700 group-hover:opacity-90 transition-opacity">
+                            <!-- Ensure the image covers the area but shows the important parts -->
+                            <img src="images/spam_class.png" alt="Spam Detection App Interface" class="w-full h-full object-cover object-top">
                             
                              <div class="project-overlay absolute inset-0 bg-dark/90 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                                <p class="text-sm text-slate-300">Applied text vectorization techniques to extract meaningful features from raw email data.</p>
+                                <p class="text-sm text-slate-300 font-medium"><i class="fas fa-external-link-alt mr-2"></i>Click to view live app</p>
                             </div>
-                        </div>
+                        </a>
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-bold mb-2 text-white">Email Spam Detection</h3>
-                            <p class="text-slate-400 mb-4 text-sm flex-1">Implemented a text classification model to effectively identify spam emails.</p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
+                            <p class="text-slate-400 mb-4 text-sm flex-1">Implemented a text classification model to effectively identify spam emails using a web interface.</p>
+                            
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="text-xs font-medium px-2.5 py-1 bg-dark text-slate-300 rounded-md">Naive Bayes</span>
                                 <span class="text-xs font-medium px-2.5 py-1 bg-dark text-slate-300 rounded-md">Text Vectorization</span>
+                            </div>
+
+                            <!-- Links/Buttons -->
+                            <div class="flex items-center gap-3 pt-4 border-t border-slate-700 mt-auto">
+                                <a href="https://brig-spam-classifier.streamlit.app/" target="_blank" rel="noopener noreferrer" class="flex-1 bg-primary hover:bg-emerald-600 text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+                                    <i class="fas fa-shield-alt"></i> Live App
+                                </a>
+                                <a href="https://github.com/BrigCals/Machine-Learning-Projects/tree/main/spam-mail-classifier" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 text-sm font-medium py-2 px-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
                             </div>
                         </div>
                     </div>
