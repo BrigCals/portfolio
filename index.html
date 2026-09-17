@@ -237,26 +237,39 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 3: Diabetes -->
+                    <!-- Project Card 3: Diabetes (UPDATED) -->
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative" style="transition-delay: 200ms;">
-                        <div class="h-48 overflow-hidden relative border-b border-slate-700">
-                            <img src="images/diabetes-app.png" alt="Diabetes Prediction Project" class="w-full h-full object-cover">
+                        <!-- Make the image area a clickable link to the live app -->
+                        <a href="https://brig-diabetes-prediction.streamlit.app/" target="_blank" rel="noopener noreferrer" class="block h-48 overflow-hidden relative border-b border-slate-700 group-hover:opacity-90 transition-opacity">
+                            <img src="images/diabetes-app.png" alt="Diabetes Prediction Project" class="w-full h-full object-cover object-top">
                              <div class="project-overlay absolute inset-0 bg-dark/90 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                                <p class="text-sm text-slate-300">Performed extensive data preprocessing and feature selection before evaluating with standard metrics.</p>
+                                <p class="text-sm text-slate-300 font-medium"><i class="fas fa-external-link-alt mr-2"></i>Click to view live app</p>
                             </div>
-                        </div>
+                        </a>
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-bold mb-2 text-white">Diabetes Risk Prediction</h3>
                             <p class="text-slate-400 mb-4 text-sm flex-1">Built a robust classification model to predict diabetes risk.</p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
+                            
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="text-xs font-medium px-2.5 py-1 bg-dark text-slate-300 rounded-md">SVM</span>
                                 <span class="text-xs font-medium px-2.5 py-1 bg-dark text-slate-300 rounded-md">Classification</span>
                                 <span class="text-xs font-medium px-2.5 py-1 bg-dark text-slate-300 rounded-md">Feature Selection</span>
                             </div>
+
+                            <!-- Links/Buttons -->
+                            <div class="flex items-center gap-3 pt-4 border-t border-slate-700 mt-auto">
+                                <a href="https://brig-diabetes-prediction.streamlit.app/" target="_blank" rel="noopener noreferrer" class="flex-1 bg-primary hover:bg-emerald-600 text-white text-sm font-medium py-2 px-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+                                    <i class="fas fa-heartbeat"></i> Live App
+                                </a>
+                                <a href="https://github.com/BrigCals/Machine-Learning-Projects/tree/main/diabetes-risk-prediction" target="_blank" rel="noopener noreferrer" class="flex-1 bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 text-sm font-medium py-2 px-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Project Card 4: Spam Detection (UPDATED) -->
+                    <!-- Project Card 4: Spam Detection -->
                     <div class="project-card bg-secondary rounded-2xl overflow-hidden border border-slate-700 hover:border-primary/50 transition-all duration-300 reveal flex flex-col group relative" style="transition-delay: 300ms;">
                         <!-- Make the image area a clickable link to the live app -->
                         <a href="https://brig-spam-classifier.streamlit.app/" target="_blank" rel="noopener noreferrer" class="block h-48 overflow-hidden relative border-b border-slate-700 group-hover:opacity-90 transition-opacity">
